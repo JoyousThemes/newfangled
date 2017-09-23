@@ -1,0 +1,56 @@
+
+/* Breadcrumb */
+.breadcrumb {
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  padding: 70px 0px; 
+  margin: 0;
+  &:after {
+      background-color: rgba(0, 0, 0, 0.1);
+      content: "";
+      display: block;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+  }
+  a {
+    color: $primary;  
+    &:hover {
+      color: $c1;
+    }
+  }
+  .breadcrumb-left {
+      h2 {
+        margin-bottom:0;
+        color: $white;
+        position: relative;
+        z-index:10;
+        display: inline-block;
+        padding: 0 15px;
+        background-color: rgba($primary,0.8);
+        border-radius: 4px;
+        font-weight: 600;
+      }
+  }
+
+  .breadcrumb-right {
+     color: $white;
+     //float: right;
+     margin-top: 8px;
+      position: relative;
+        z-index:10;
+      #crumbs{
+        
+      }
+  }
+}
+
+
+.breadcrumb.blog {
+    padding:150px 0px;
+}
