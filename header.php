@@ -83,10 +83,12 @@ if ( is_singular() && pings_open() ) { ?>
 
 	</header><!-- #masthead --> 
 
-	<?php if ( function_exists( 'is_woocommerce' ) || function_exists( 'is_cart' ) || function_exists( 'is_checkout' ) ) :
-	 if ( is_woocommerce() || is_cart() || is_checkout() ) { ?>
-	   <?php $breadcrumb = get_theme_mod( 'breadcrumb',true ); ?>    
-		   <div class="breadcrumb">
+	<?php if ( function_exists( 'is_woocommerce' ) ) :
+	 if ( is_woocommerce()  ) { 
+	  $breadcrumb = get_theme_mod( 'breadcrumb',true ); 
+	  $breadcrumb_section = get_theme_mod( 'breadcrumb_section',true );
+	    if( $breadcrumb_section ) { ?>    
+		   <div class="breadcrumb" style="background-image: url('<?php echo newfangled_featured_header(); ?>');"> 
 				<div class="container"><?php
 				   if( !is_search() && !is_archive() && !is_404() ) : ?>
 						<div class="breadcrumb-left eight columns">
@@ -99,8 +101,9 @@ if ( is_singular() && pings_open() ) { ?>
 						</div>
 					<?php endif; ?>
 				</div>
-			</div>
-	<?php } 
+			</div><?php 
+		} 
+    }
 	endif; ?>
 
 	

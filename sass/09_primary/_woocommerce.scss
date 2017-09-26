@@ -138,6 +138,10 @@
 	color: $white;
 }
 
+.woocommerce-page .woocommerce-breadcrumb  {
+	color: $primary;
+}
+
 .woocommerce #content div.product .woocommerce-tabs ul.tabs li,.woocommerce div.product .woocommerce-tabs ul.tabs li,.woocommerce-page #content div.product .woocommerce-tabs ul.tabs li,.woocommerce-page div.product .woocommerce-tabs ul.tabs li {
 	background: #f2f9fe; /* Old browsers */
 	background: -moz-linear-gradient(top,  #f2f9fe 0%, #d6f0fd 100%); /* FF3.6+ */
@@ -167,7 +171,7 @@
 .woocommerce div.product .woocommerce-tabs .panel,
 .woocommerce-page #content div.product .woocommerce-tabs .panel,
 .woocommerce-page div.product .woocommerce-tabs .panel {
-	background-color: $c1;
+	background-color: #f2f2f2;
 }
 
 .woocommerce #content div.product .woocommerce-tabs ul.tabs li a:hover,
@@ -360,7 +364,7 @@
 .woocommerce-page #content div.product .woocommerce-tabs .panel,
 .woocommerce-page div.product .woocommerce-tabs .panel {
 	padding: 20px;
-	border: 1px solid #e0dadf;
+	border: 1px solid #d7d7d7!important;
 	border-top: 0;
 }
 
@@ -528,18 +532,18 @@
 .woocommerce-page .site-footer,
 .woocommerce-page .footer-bottom,
 .woocommerce-page .woocommerce-breadcrumb {
-	padding: 0 50%;
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing:    content-box;
-	box-sizing:         content-box;	
-	margin: 0 -50%;	
+	
 }
 
 
 
-.woocommerce .woocommerce-breadcrumb {
-	//position:relative;
-	//font-size: 16px;
+.woocommerce  {
+	.breadcrumb-left {
+        text-align: left;
+	}
+	.breadcrumb-right {
+       text-align: right;
+	}
 }
 .woocommerce a.remove {
 	background: $primary;

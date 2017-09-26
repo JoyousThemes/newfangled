@@ -2,7 +2,7 @@
 Theme Name: Newfangled  
 Author: Joyousthemes                       
 Description: Newfangled is a free WordPress theme to use for multipurpose. It fits for business,commercial Uses and other purposes. You can use multiple sliders and Icon with services, BreadCrumb with related featured image of Post and Page. It has a Clean look of Blog view and widgetized footer. Newfangled is a responsive, Translation Ready and Customizable Options. If you have any queries ping to this maild ID: joyousthemes@gmail.com
-Version: 1.0.7 
+Version: 1.0.8 
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: newfangled  
@@ -41,7 +41,7 @@ and Blueprint http://www.blueprintcss.org/
 9.0 Primary
 10.0 Secondary
 11.0 Footer
-12.0 Responsiveness
+12.0 Responsiveness  
 
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -2400,6 +2400,9 @@ blockquote, q {
 .woocommerce-page .woocommerce-breadcrumb a {
   color: #fff; }
 
+.woocommerce-page .woocommerce-breadcrumb {
+  color: #79b458; }
+
 .woocommerce #content div.product .woocommerce-tabs ul.tabs li, .woocommerce div.product .woocommerce-tabs ul.tabs li, .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li, .woocommerce-page div.product .woocommerce-tabs ul.tabs li {
   background: #f2f9fe;
   /* Old browsers */
@@ -2429,7 +2432,7 @@ blockquote, q {
 .woocommerce div.product .woocommerce-tabs .panel,
 .woocommerce-page #content div.product .woocommerce-tabs .panel,
 .woocommerce-page div.product .woocommerce-tabs .panel {
-  background-color: #d2d2d2; }
+  background-color: #f2f2f2; }
 
 .woocommerce #content div.product .woocommerce-tabs ul.tabs li a:hover,
 .woocommerce div.product .woocommerce-tabs ul.tabs li a:hover,
@@ -2603,7 +2606,7 @@ blockquote, q {
 .woocommerce-page #content div.product .woocommerce-tabs .panel,
 .woocommerce-page div.product .woocommerce-tabs .panel {
   padding: 20px;
-  border: 1px solid #e0dadf;
+  border: 1px solid #d7d7d7 !important;
   border-top: 0; }
 
 .woocommerce #content div.product .woocommerce-tabs ul.tabs,
@@ -2747,12 +2750,11 @@ blockquote, q {
   padding: 7px 10px;
   border: 0; }
 
-.woocommerce-page .site-footer,
-.woocommerce-page .footer-bottom,
-.woocommerce-page .woocommerce-breadcrumb {
-  padding: 0 50%;
-  box-sizing: content-box;
-  margin: 0 -50%; }
+.woocommerce .breadcrumb-left {
+  text-align: left; }
+
+.woocommerce .breadcrumb-right {
+  text-align: right; }
 
 .woocommerce a.remove {
   background: #79b458;
