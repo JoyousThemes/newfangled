@@ -38,9 +38,24 @@ function newfangled_display_upgrade() {
                             <a href="mailto:joyousthemes@gmail.com" target="_blank" class="button button-secondary"><?php esc_html_e('Mail Us', 'newfangled'); ?></a>
                         </p>
                     </div> 
+                    <div class="theme_link">
+                        <h3><?php esc_html_e( 'Providing WordPress Related Services', 'newfangled' ); ?></h3>
+                        <p class="about">
+                        	<?php esc_html_e('If you want following our services Mail Us joyousthemes@gmail.com. ', 'newfangled'); ?>
+                        	<li>Creating a Website</li>
+                        	<li>Installation and Demo Setup</li>
+                        	<li>Customization</li>
+                        	<li>WordPress Migration</li>
+                        	<li>PSD to WordPress</li>
+                        	<li>Small Fix</li>	
+                        </p>
+                        <p>  
+                            <a href="mailto:joyousthemes@gmail.com" target="_blank" class="button button-secondary"><?php esc_html_e('Mail Us', 'newfangled'); ?></a>
+                        </p>
+                    </div> 
                 </div>  
                 <div class="theme_info_right">
-                    <img src="<?php echo get_template_directory_uri(); ?>/screenshot.png" alt="Theme Screenshot" />
+                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/screenshot.png" alt="Theme Screenshot" />
                 </div>
             </div>
         </div>
@@ -75,7 +90,7 @@ function newfangled_display_upgrade() {
 							'breadcrumb_bg' => array(
 								'type' => 'image',
 								'label' => __('Breadcrumb Background Image', 'newfangled'),
-								'default' => get_template_directory_uri() .'/images/breadcrumb.png',
+								'default' => esc_url( get_template_directory_uri() ) .'/images/breadcrumb.png',
 							    'sanitize_callback' => 'esc_url_raw',
 							),
 							'breadcrumb_char' => array(

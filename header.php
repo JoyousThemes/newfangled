@@ -19,6 +19,7 @@ if ( is_singular() && pings_open() ) { ?>
 </head>
   
 <body <?php body_class(); ?>>  
+	 <?php wp_body_open(); ?> 
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'newfangled' ); ?></a>
 	<?php do_action('newfangled_before_header'); ?>

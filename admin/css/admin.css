@@ -25,7 +25,9 @@ a[href="themes.php?page=newfangled_upgrade"] {
   transform: rotate(-42deg);
 }
 
-
+.theme_link li {
+  list-style: inside;
+}
 
 
 .info-tab-content {

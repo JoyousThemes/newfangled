@@ -2,7 +2,10 @@
 Theme Name: Newfangled  
 Author: Joyousthemes                       
 Description: Newfangled is a free WordPress theme to use for multipurpose. It fits for business,commercial Uses and other purposes. You can use multiple sliders and Icon with services, BreadCrumb with related featured image of Post and Page. It has a Clean look of Blog view and widgetized footer. Newfangled is a responsive, Translation Ready and Customizable Options. If you have any queries ping to this maild ID: joyousthemes@gmail.com
-Version: 1.0.8 
+Version: 1.0.9
+Requires at least: 5.0  
+Requires PHP: 7.0
+Tested up to: 5.5.1
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: newfangled  
@@ -1912,6 +1915,93 @@ blockquote, q {
     blockquote p a:hover, q p a:hover {
       color: #7b7b7b; }
 
+      /* Gutenberg CSS style start */
+.wp-block-latest-posts.aligncenter {
+  margin-left: 3em; }
+
+.wp-block-verse {
+  color: #757575; }
+
+.wp-block-quote {
+  padding: 0px;
+  border-left: 4px solid black;
+  padding-left: 5px;
+  margin-top: 0px; }
+  .wp-block-quote:before {
+    content: "";
+    border: 0px; }
+  .wp-block-quote p {
+    padding: 20px !important; }
+  .wp-block-quote cite {
+    margin: 0px;
+    padding-left: 20px; }
+
+.wp-block-quote.is-large {
+  border: 0px;
+  color: #222222;
+  padding: 20px; }
+  .wp-block-quote.is-large cite {
+    text-align: right;
+    display: block;
+    color: #222222;
+    font-style: italic;
+    padding-right: 20px; }
+
+.wp-block-pullquote {
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  padding: 0px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  border-left: none !important;
+  margin-bottom: 20px; }
+  .wp-block-pullquote p {
+    padding: 20px !important; }
+  .wp-block-pullquote:before {
+    content: "";
+    border: 0px; }
+
+.wp-block-pullquote.alignleft {
+  margin-right: 25px; }
+
+.wp-block-pullquote.alignright {
+  margin-left: 25px; }
+
+.wp-block-button a:hover {
+  padding: 11px 24px;
+  box-shadow: 3px 3px black;
+  -webkit-box-shadow: 3px 3px black; }
+
+.wp-block-cover-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.wp-block-audio {
+  text-align: center; }
+
+.wp-block-button.aligncenter {
+  margin-bottom: 1.5em; }
+
+.home .site-content {
+  padding-top: 50px; }
+  .home .site-content .site-main {
+    margin-top: 0; }
+
+.home .site-header {
+  border-bottom: none; }
+
+.home.blog .site-content {
+  padding-top: 100px; }
+
+.blog article.post {
+  padding: 40px 0px 40px; }
+  .blog article.post .post-thumb {
+    padding-top: 10px; }
+
+.blog article.post:first-child {
+  padding-top: 0; }
+/* Gutenberg CSS style end */
 .related-posts {
   padding: 20px 0px; }
   .related-posts ul#newfangled-related-posts {
